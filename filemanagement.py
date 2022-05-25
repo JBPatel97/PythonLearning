@@ -28,6 +28,12 @@ def move(dest, entry, name):
         os.rename(entry, unique_name)
     shutil.move(entry, dest)
 
+
+
+
+
+
+
 class MoverHandler(FileSystemEventHandler):
     def on_modified(self, event):
         for entry in dir_list:
